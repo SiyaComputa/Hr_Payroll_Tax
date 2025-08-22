@@ -387,8 +387,7 @@ li {
   justify-content: center;
 }
 
-.contacts-office-image img {
-  max-width: 340px;
+.contacts-office-image img {  
   width: 100%;
   border-radius: 14px;
   box-shadow: 0 4px 24px rgba(34, 46, 80, 0.1);
