@@ -101,27 +101,7 @@
   background: mediumpurple;
   color: #f9d342;
 }
-.sidebar-toggle {
-  display: none;
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  background: #222e50;
-  color: transparent;
-  border: none;
-  font-size: 2rem;
-  z-index: 1100;
-  cursor: pointer;
-  padding: 8px 12px;
-  border-radius: 4px;
-  line-height: 1;
-}
-.sidebar-toggle::before {
-  content: "\2022\2022\2022";
-  display: block;
-  font-size: 2.2rem;
-  letter-spacing: 0.2em;
-}
+
 #sidebar-menu {
   height: 100%;
   width: 250px;
@@ -140,17 +120,6 @@
   font-size: 25px;
   color: #818181;
   display: block;
-}
-#toggle-button {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #333;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  position: fixed;
-  top: 20px;
-  left: 20px;
 }
 
 /*
@@ -270,7 +239,6 @@ li {
   box-shadow: 0 4px 32px 0 rgba(58, 141, 222, 0.13),
     0 1.5px 8px 0 rgba(249, 212, 35, 0.08);
   border: 1.5px solid #e3f6ff;
-  text-align: 200px;
   letter-spacing: 0.01em;
   text-shadow: 0 2px 12px #e3f6ff, 0 1px 0 #fff, 0 0 12px #6be6c1,
     0 0 2px #f9d423;
@@ -349,6 +317,12 @@ li {
   min-width: 260px;
   float: right;
   clear: both;
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .quote-form h4 {
@@ -357,19 +331,6 @@ li {
   font-size: 1.2rem;
   font-weight: 600;
 }
-
-.quote-form p {
-  color: #444;
-  font-size: 1rem;
-  margin-bottom: 1.2rem;
-}
-
-.quote-form form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
 .quote-form label {
   display: flex;
   flex-direction: column;
@@ -377,7 +338,6 @@ li {
   color: #222;
   margin-bottom: 0.15rem;
 }
-
 .quote-form input[type="text"],
 .quote-form input[type="email"],
 .quote-form input[type="name"],
@@ -416,7 +376,6 @@ li {
   transition: background 0.2s;
   margin-top: 0.4rem;
 }
-
 .quote-form button[type="submit"]:hover {
   background: #3949ab;
 }
